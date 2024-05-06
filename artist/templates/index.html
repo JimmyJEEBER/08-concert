@@ -1,0 +1,11 @@
+{% load django_vite %}
+{% block content %}
+    <div id="app">
+      
+    </div>
+    <h2>************** this is django *************</h2>
+{% endblock content %}
+{% block js %}
+  {% vite_hmr_client %}
+  {% vite_asset 'src/apps/concert_edit/main.js' %}
+{% endblock js %}
